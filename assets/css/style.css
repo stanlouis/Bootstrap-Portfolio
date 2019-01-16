@@ -1,74 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
 body {
-    background-image: url(../images/subtle_white_mini_waves.png);
-    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  background-image: url(../images/subtle_white_mini_waves.png);
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-top: 90px;
 }
 
-/* navbar footer styles
+/* navbar  styles
 -------------------------------------------------- */
 
-.navbar-custom,
-.footer-bg {
-    background: #6D6027;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #D3CBB8, #6D6027);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #D3CBB8, #6D6027);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    /* W3C */
-    color: #ffffff;
-    border-radius: 0;
+.navbar {
+  color: black;
+  box-shadow: 2px 2px 5px #0f0f0f;
+  opacity: 0.9;
+  background: #fff;
 }
-
-.navbar-custom .navbar-nav>li>a {
-    color: #fff;
-}
-
-.navbar-custom .navbar-nav>.active>a {
-    color: #ffffff;
-    background-color: transparent;
-}
-
-.navbar-custom .navbar-nav>li>a:hover,
-.navbar-custom .navbar-nav>li>a:focus,
-.navbar-custom .navbar-nav>.active>a:hover,
-.navbar-custom .navbar-nav>.active>a:focus,
-.navbar-custom .navbar-nav>.open>a {
-    text-decoration: none;
+.navbar .nav-item {
+  font-size: 1.4rem;
+  padding-right: 1.4rem;
 }
 
 .navbar-custom .navbar-brand {
-    color: white;
+  color: black;
+  border: 3px solid #c3c5c3;
+  transition: all 2s;
+  font-size: 30px;
+  padding: 0 4px 0 4px;
+}
+
+.nav-link {
+  color: #000;
+  font-size: 25px;
+  padding: 10px 20px !important;
+  border-radius: 5px;
+  transition: background 2s ease;
+}
+
+.nav-link:hover {
+  background: rgba(0, 0, 0, 0.6);
+  color: #f1fffa !important;
+}
+
+.nav-active {
+  color: #f1fffa;
+  font-size: 25px;
+  padding: 10px 20px !important;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.6);
+  transition: background 2s ease;
+}
+
+.nav-active:hover {
+  background: #000;
 }
 
 .custom-toggler.navbar-toggler {
-    border-color: rgba(255,255,203, 0.7);
+  border-color: #c3c5c3;
 }
 .custom-toggler .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,203, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+/*#################banner##############*/
+
+.item-1,
+.item-2,
+.item-3 {
+  min-height: 60vh;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 95%);
+}
+
+.item-1 {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)),
+    url(../images/carousel/light-bulb.jpg) center/cover fixed no-repeat;
+}
+
+.item-2 {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)),
+    url(../images/carousel/cog-wheels.jpg) center/cover fixed no-repeat;
+}
+
+.item-3 {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)),
+    url(../images/carousel/artificial-intelligence.jpg) center/cover fixed
+      no-repeat;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.banner-btn {
+  color: #f1fffa;
+  border: 2px solid #f1fffa;
+  transition: all 1s;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.banner-btn:hover {
+  color: #2a9134;
+  background: #f1fffa;
+  border-color: #f1fffa;
+  transform: translateY(-7px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
 }
 
 /* Sticky footer styles
 -------------------------------------------------- */
 
 html {
-    position: relative;
-    min-height: 100%;
+  position: relative;
+  min-height: 100%;
 }
 
 body {
-    /* Margin bottom by footer height */
-    margin-bottom: 60px;
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
 }
 
 .footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    /* Set the fixed height of the footer here */
-    height: 60px;
-    line-height: 60px;
-    /* Vertically center the text there */
-    background-color: #f5f5f5;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  line-height: 60px;
+  /* Vertically center the text there */
+  background-color: #f5f5f5;
 }
 
 /* Custom page CSS
@@ -76,36 +134,36 @@ body {
 
 /* Not required for template or sticky footer method. */
 
-body>.container {
-    padding: 60px 15px 0;
+body > .container {
+  padding: 60px 15px 0;
 }
 
-.footer>.container {
-    padding-right: 15px;
-    padding-left: 15px;
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 .contact {
-    margin: 20% 10%;
-    border: 1px solid #666;
-    border-radius: 20px;
-    box-shadow: 2px 4px #888888;
-    padding: 1rem;
+  margin: 20% 10%;
+  border: 1px solid #666;
+  border-radius: 20px;
+  box-shadow: 2px 4px #888888;
+  padding: 1rem;
 }
 
-.card-footer{
-    height: 60px;
-    width: 308px;
-    background: lightseagreen;
-    margin: 0;
-    border:0px;
-    color:#fff;
-    box-shadow: 0 0 1px #ccc;
-    -webkit-transition-duration: 0.2s;
-    -webkit-transition-timing-function: linear;
-    box-shadow:0px 0 0 #31708f  inset;
+.card-footer {
+  height: 60px;
+  width: 308px;
+  background: lightseagreen;
+  margin: 0;
+  border: 0px;
+  color: #fff;
+  box-shadow: 0 0 1px #ccc;
+  -webkit-transition-duration: 0.2s;
+  -webkit-transition-timing-function: linear;
+  box-shadow: 0px 0 0 #31708f inset;
 }
-.card-footer:hover{
-    box-shadow:0 0 0 10px #333  inset;
-    -webkit-transform: scale(1);
+.card-footer:hover {
+  box-shadow: 0 0 0 10px #333 inset;
+  -webkit-transform: scale(1);
 }

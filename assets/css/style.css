@@ -226,6 +226,9 @@ body {
   color: black;
 }
 
+.about-story a:hover, a:active, a:visited {
+  color: inherit;
+}
 .about-text {
   padding-left: 2rem;
 }

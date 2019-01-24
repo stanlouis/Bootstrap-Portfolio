@@ -3,11 +3,11 @@
 body {
   background-image: url(../images/subtle_white_mini_waves.png);
   font-family: 'Source Sans Pro', sans-serif;
-  margin-top: 95px;
+  margin-top: 75px;
 }
 
 section {
-  padding-top: 100px;
+  padding-top: 75px;
 }
 
 /* navbar  styles
@@ -67,7 +67,9 @@ section {
 
 /* Banner styles
 -------------------------------------------------- */
-
+.carousel-inner {
+  min-height: 100vh;
+}
 .item-1,
 .item-2,
 .item-3 {
@@ -181,12 +183,15 @@ body {
   margin-bottom: 0;
 }
 
-.contact {
-  margin: 20% 10%;
-  border: 1px solid #666;
-  border-radius: 20px;
-  box-shadow: 2px 4px #888888;
-  padding: 1rem;
+/* Skills section
+-------------------------------------------------- */
+#skills {
+  height: 100vh;
+}
+
+#skills img {
+  width: 100%;
+  height: 60%;
 }
 
 /* About section
@@ -244,6 +249,9 @@ body {
 
 /* Portfolio section
 -------------------------------------------------- */
+#portfolio {
+  min-height: 100vh;
+}
 .img-container {
   position: relative;
   overflow: hidden;
@@ -283,6 +291,44 @@ body {
 
 }
 
+/* Contact section
+-------------------------------------------------- */
+
+#contact {
+  background: url('../images/contact.jpg')center/cover fixed no-repeat;
+  min-height: 90vh;
+}
+
+#contact .card {
+  background: rgba(0, 0, 0, 0.5);
+  transition: all 2s ease;
+}
+
+#contact .card:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+#contact .card-header {
+  color: #f1fffa
+}
+
+#contact .input-group-text {
+  background: #f1fffa;
+  border-color: #f1fffa;
+  color: #000;
+}
+
+.contact-btn {
+  color: #000;
+  background: #f1fffa;
+  transition: all 2s ease-in-out;
+}
+
+.contact-btn:hover {
+  background: transparent;
+  border-color: #f1fffa;
+  color: #f1fffa;
+}
 
 @media (max-width: 768px) {
   .about-story {

@@ -21,7 +21,7 @@
     <header id="header">
       <!-- Fixed navbar -->
       <nav class="navbar navbar-expand-md navbar-custom navbar-light fixed-top">
-        <a href="#home" class="navbar-brand">STANLEY LOUIS</a>
+        <a href="/" class="navbar-brand">STANLEY LOUIS</a>
         <button
           class="navbar-toggler custom-toggler"
           type="button"
@@ -35,7 +35,9 @@
           id="navbar7"
         >
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#header">Home</a>
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="#skills">Skills</a>
             </li>
@@ -54,7 +56,7 @@
     </header>
 
     <!-- Begin page content -->
-    <div class="container-fluid mt-5 #carousel #home">
+    <div class="container-fluid mt-5 #carousel">
       <!-- section carousel -->
       <div class="row">
         <div class="col no-padding">
@@ -127,7 +129,11 @@
     <!--skills section-->
 
     <section id="skills" class="pb-5 my-0">
-      <img src="./assets/images/skills.jpg" alt="" />
+      <img
+        src="./assets/images/skills.jpg"
+        alt=""
+        class="img-fluid"
+      />
       <div class="container">
         <!--     title-->
         <div class="row title mb-5">
@@ -141,40 +147,7 @@
         <!--      end of title-->
 
         <div class="row">
-          <div class="col-md-6">
-            <h2>Core Knowledge..<span>!</span></h2>
-            <hr />
-            <div class="study1">
-              <ul class="list-group">
-                <li class="list-group-item  bg-transparent">
-                  <h3>
-                    <span><i class="fab fa-js"></i></span> JavaScript
-                  </h3>
-                </li>
-                <li class="list-group-item  bg-transparent">
-                  <h3>
-                    <span><i class="fab fa-node-js"></i></span> Node.js,
-                    Express.js
-                  </h3>
-                </li>
-                <li class="list-group-item  bg-transparent">
-                  <h3>
-                    <span><i class="fas fa-database"></i></span> MogoDB, MySql,
-                    SQL Server
-                  </h3>
-                </li>
-                <li class="list-group-item bg-transparent">
-                  <h3>
-                    <span><i class="fab fa-react"></i></span> React.js, Next.js
-                  </h3>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <h2>skills..<span>!</span></h2>
-            <hr />
-
+          <div class="col">
             <div class="bar my-3">
               <h5
                 class="text-dark text-uppercase d-flex justify-content-between"
@@ -533,5 +506,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>

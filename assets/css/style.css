@@ -336,7 +336,7 @@ a:visited {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
   #carousel {
     max-width: 80vw;
     margin: 0 auto;
